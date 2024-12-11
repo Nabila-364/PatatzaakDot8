@@ -1,7 +1,10 @@
+using PatatzaakDot8.Database;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<Dbcontext>();
 
 var app = builder.Build();
 
